@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<link rel="stylesheet" href="styles.css" type="text/css"/>
+		<meta charset="UTF-8">
+		<title>Document</title>
+		<script src="https://cdn.jsdelivr.net/gh/ethereum/web3.js@0.18.2/dist/web3.min.js"></script>
+		<script src="vote.js"></script>
+	</head>
+	<body>
+		<div class="container" id="maincontainer">
+			<h1>Голосование</h1>
+			<h2>Проголосуйте за ваше любимое оружие</h2>
+			<div class="select-box">
+				<select name="selectgun" id="selectgun" class="cs-skin-rotate">
+					<option value="0" id = "1">1. Пистолет Макарова</option>
+					<option value="1" id = "2">2. Револьвер "Гроза"</option>
+					<option value="2" id = "3">3. Пистолет "Маузер"</option>
+					<option value="3" id = "4">4. СВД</option>
+					<option value="4" id = "5">5. Автомат Калашникова</option>
+					<option value="5" id = "6">6. Автомат "Сайга"</option>
+					<option value="6" id = "7">7. Автомат М4</option>
+					<option value="7" id = "8">8. ППШ</option>
+					<option value="8" id = "9">9. Дробовик XM</option>
+					<option value="9" id = "10">10. Дробовик "Молот"</option>
+					<option value="10" id = "11">11. Дробовик "Байкал"</option>
+					<option value="11" id = "12">12. Арбалет "Жнец"</option>
+				</select>
+				<input type="button" id="send" value="Проголосовать" onClick="VoteButton()">
+				</input>
+			</div>
+			<hr>
+			<div class = "div_table">
+				<table id="resultstable">
+					<tbody>
+						<tr>
+							<td><img src="https://www.huntworld.ru/upload/iblock/846/pistolet_baikal_mr_79_9tm_makarych_9mm_r_a_ooop_bez_dop_magazina.jpeg"><p>Пистолет Макарова</p></td>
+							<td><img src="https://www.huntworld.ru/upload/iblock/5b5/revolver_groza_06_9mm_r_a_ooop.jpeg"><p>Револьвер "Гроза"</p></td>
+							<td><img src="https://www.huntworld.ru/upload/iblock/290/pistolet_umarex_legends_c96_splav_chernyy.jpeg"><p>Пистолет "Маузер"</p></td>
+							<td><img src="https://www.huntworld.ru/upload/iblock/999/maket_baikal_mmg_dragunova_svds_skladnoy_priklad.jpeg"><p>СВД</p></td>
+						</tr>
+						<tr id="valuerow1">
+							<td>&nbsp;</td>
+							<td>&nbsp;</td>
+							<td>&nbsp;</td>
+							<td>&nbsp;</td>
+						</tr>
+						<tr>
+							<td><img src="https://www.huntworld.ru/upload/iblock/373/karabin_kk_sayga_tg2_366tkm_izh_1611_premialnoe_ispolnenie.jpeg"><p>Автомат Калашникова</p></td>
+							<td><img src="https://www.huntworld.ru/upload/iblock/737/karabin_kk_sayga_tg2_366tkm.jpeg"><p>Автомат "Сайга"</p></td>
+							<td><img src="https://www.huntworld.ru/upload/iblock/07b/vintovka_crosman_m4_177_plastik_4_5mm.jpeg"><p>Автомат М4</p></td>
+							<td><img src="https://www.huntworld.ru/upload/iblock/153/2b1e7b30_183a_11de_a4d1_0011254177b6_002.jpeg"><p>ППШ</p></td>
+						</tr>
+						<tr id="valuerow2">
+							<td>&nbsp;</td>
+							<td>&nbsp;</td>
+							<td>&nbsp;</td>
+							<td>&nbsp;</td>
+						</tr>
+						<tr>
+							<td><img src="https://www.huntworld.ru/upload/iblock/e3a/ruzhe_benelli_m4_super_90_12kh76_550mm.jpeg"><p>Дробовик XM</p></td>
+							<td><img src="https://www.huntworld.ru/upload/iblock/06f/ruzhe_molot_bekas_avto_vpo_201m_03_12kh76_680mm.jpeg"><p>Дробовик "Молот"</p></td>
+							<td><img src="https://www.huntworld.ru/upload/iblock/dfd/ruzhe_baikal_mr_155_plastik_tsv_mushka_d_n_12kh76_710mm.jpeg"><p>Дробовик "Байкал"</p></td>
+							<td><img src="https://www.huntworld.ru/upload/iblock/ebd/arbalet_interloper_zhnets_410_blochnyy_s_komplektatsiey_chernyy.jpeg"><p>Арбалет "Жнец"</p></td>
+						</tr>
+						<tr id="valuerow3">
+							<td>&nbsp;</td>
+							<td>&nbsp;</td>
+							<td>&nbsp;</td>
+							<td>&nbsp;</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+	</body>
+</html>

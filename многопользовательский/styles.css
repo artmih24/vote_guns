@@ -1,0 +1,173 @@
+body {
+	//background-color: aliceblue;
+	background-image: url(https://kartinkinaden.ru/uploads/posts/2020-09/1600215512_1-p-fon-oruzhie-1.jpg);
+	padding: 2em;
+	font-family: 'Deutsch Gothic', arial;
+}
+p {
+	font-size: 14pt;
+	font-family: 'Deutsch Gothic', arial;
+}
+img {
+	//margin-top: 100px;/* отступ от картинки сверху */
+	//margin-bottom: 100px; /* отступ от картинки снизу */
+	//margin-right: 150px; /* отступ от картинки справа */
+	//margin-left: 80px; /* отступ от картинки слева */
+	width: 250px; /* ширина */
+	height: 150px; /* высота */
+	//opacity: 0.4; /* прозрачность картинки*/
+	//float: right; /* Выравнивание по правому краю */
+	//box-shadow: -19px 0 22px -19px #000; /*тень картинки*/
+}
+input#send {
+	background-color: #88DDDD;
+	border: none;
+	color: black;
+	padding: 5px 5px;
+	margin: 0;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	font-family: 'Deutsch Gothic', arial;
+	border-radius: 0 4px 4px 0;
+	position: relative;
+	left: -4px;
+	height: 45px;
+	width: 160px;
+}
+input#send:hover {
+	background-color: cadetblue;
+}
+input#send:disabled {
+	background-color: gainsboro;
+}
+table#resultstable {
+	width: 100%;
+	//border: 1px solid #000;
+	//margin: auto;
+	text-align: center;
+}
+.container {
+	width: 80%;
+	margin: 0 auto;
+	padding: 1em;
+	//background-color: white;
+	background-image: url(http://abali.ru/wp-content/uploads/2013/08/aluminiy.jpg);
+	border-radius: 1em;
+}
+.div_table {
+	//margin: center;
+	width: 100%;
+	padding: auto;
+	text-align: center;
+}
+#selectgun {
+	width: calc(88%);
+	padding: 12px 20px;
+	margin: 0 0;
+	display: inline-block;
+	border: 1px solid #ccc;
+	border-radius: 4px 0 0 4px;
+	box-sizing: border-box;
+	height: 45px;
+	font-family: 'Deutsch Gothic', arial;
+}
+#valuerow1 {
+	font-weight: bold;
+	text-align: center;
+}
+#valuerow2 {
+	font-weight: bold;
+	text-align: center;
+}
+#valuerow3 {
+	font-weight: bold;
+	text-align: center;
+}
+
+@font-face {
+    font-family: 'icomoon';
+    src:url('../fonts/icomoon/icomoon.eot?-rdnm34');
+    src:url('../fonts/icomoon/icomoon.eot?#iefix-rdnm34') format('embedded-opentype'),
+        url('../fonts/icomoon/icomoon.woff?-rdnm34') format('woff'),
+        url('../fonts/icomoon/icomoon.ttf?-rdnm34') format('truetype'),
+        url('../fonts/icomoon/icomoon.svg?-rdnm34#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+ 
+div.cs-skin-border {
+    background: transparent;
+    font-size: 2em;
+    font-weight: 700;
+    max-width: 600px;
+}
+ 
+@media screen and (max-width: 30em) {
+    .cs-skin-border { font-size: 1em; }
+}
+ 
+.cs-skin-border > span {
+    border: 5px solid #000;
+    border-color: inherit;
+    transition: background 0.2s, border-color 0.2s;
+}
+ 
+.cs-skin-border > span::after,
+.cs-skin-border .cs-selected span::after {
+    font-family: 'icomoon';
+    content: '\e000';
+}
+ 
+.cs-skin-border ul span::after {
+    content: '';
+    opacity: 0;
+}
+ 
+.cs-skin-border .cs-selected span::after {
+    content: '\e00e';
+    color: #ddd9c9;
+    font-size: 1.5em;
+    opacity: 1;
+    transition: opacity 0.2s;
+}
+ 
+.cs-skin-border.cs-active > span {
+    background: #fff;
+    border-color: #fff;
+    color: #2980b9;
+}
+ 
+.cs-skin-border .cs-options {
+    color: #2980b9;
+    font-size: 0.75em;
+    opacity: 0;
+    transition: opacity 0.2s, visibility 0s 0.2s;
+}
+ 
+.cs-skin-border.cs-active .cs-options {
+    opacity: 1;
+    transition: opacity 0.2s;
+}
+ 
+.cs-skin-border ul span {
+    padding: 1em 2em;
+    backface-visibility: hidden;
+}
+ 
+.cs-skin-border .cs-options li span:hover,
+.cs-skin-border li.cs-focus span {
+    background: #f5f3ec;
+}
+
+button {
+	font-family: 'Deutsch Gothic', arial;
+}
+
+.select-box {
+  cursor: pointer;
+  position : relative;
+  margin: center;
+  width: 100%;
+}
